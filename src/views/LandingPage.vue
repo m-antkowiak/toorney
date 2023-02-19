@@ -1,9 +1,5 @@
 <script setup lang="ts"></script>
-
 <template>
-  <div id="app">
-    <router-view />
-  </div>
+  <div id="landingPage"></div>
 </template>
-
 <style scoped lang="less"></style>
