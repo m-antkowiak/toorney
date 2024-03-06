@@ -1,14 +1,29 @@
 {
   "root": true,
   "extends": [
-    "plugin:vue/vue3-essential",
+    "plugin:vue/vue3-recommended",
     "eslint:recommended",
     "@vue/eslint-config-typescript",
-    "@vue/eslint-config-prettier/skip-formatting",
-    "plugin:prettier/recommended"
+    "@vue/prettier"
   ],
-  "plugins": ["prettier"],
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "stylelint"
+  ],
   "parserOptions": {
     "ecmaVersion": "latest"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "vue/html-self-closing": ["error", {
+      "html": {
+        "void": "always",
+        "normal": "always",
+        "component": "always"
+      },
+      "svg": "always",
+      "math": "always"
+    }]
   }
 }
